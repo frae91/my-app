@@ -1,0 +1,21 @@
+<h1>Students page</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Degree</th>
+            <th>Birth Year</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @students.each do |student| %>
+            <tr>
+                <td><%= student.name %></td>
+                <td><%= student.degree %></td>
+                <td><%= student.birthyear %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
